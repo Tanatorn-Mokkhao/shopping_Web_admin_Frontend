@@ -3,11 +3,18 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter as Router } from "react-router-dom";
+import { Provider } from "react-redux";
+import store from "../src/store/store";
+window.store = store;
 
 ReactDOM.render(
-  <React.StrictMode>
+  <Provider store={store}>
+    {/* StrictMode check waring only on devolper mode only */}
+  <React.StrictMode> 
     <App />
-  </React.StrictMode>,
+      </React.StrictMode>
+      </Provider>,
   document.getElementById('root')
 );
 
