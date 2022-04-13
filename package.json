@@ -18,6 +18,7 @@
     "aws-sdk": "^2.1045.0",
     "axios": "^0.21.1",
     "date-fns": "^2.27.0",
+    "express": "^4.17.3",
     "react": "^17.0.2",
     "react-checkbox-tree": "^1.7.2",
     "react-dom": "^17.0.2",
@@ -37,7 +38,8 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "node server/server.js",
+    "dev": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
